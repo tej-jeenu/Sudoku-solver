@@ -41,7 +41,7 @@ $(document).ready(function(){
         
         $("#title").text("solving please wait...");
 
-        $.get("http://192.168.1.83:5000/api?first=" + sudokulines[0] + "&second=" + sudokulines[1] + "&third=" + sudokulines[2] + "&fourth=" + sudokulines[3] + "&fifth=" + sudokulines[4] + "&sixth=" + sudokulines[5] + "&seventh=" + sudokulines[6] + "&eighth=" + sudokulines[7] + "&ninth=" + sudokulines[8], function(data, status){
+        $.get("(web address of API)/api?first=" + sudokulines[0] + "&second=" + sudokulines[1] + "&third=" + sudokulines[2] + "&fourth=" + sudokulines[3] + "&fifth=" + sudokulines[4] + "&sixth=" + sudokulines[5] + "&seventh=" + sudokulines[6] + "&eighth=" + sudokulines[7] + "&ninth=" + sudokulines[8], function(data, status){
            jsondata = JSON.parse(JSON.stringify(data));
            const sudokurows = [jsondata['first'].toString(),jsondata['second'].toString(),jsondata['third'].toString(),jsondata['fourth'].toString(),jsondata['fifth'].toString(),jsondata['sixth'].toString(),jsondata['seventh'].toString(),jsondata['eighth'].toString(),jsondata['ninth'].toString()]
 
